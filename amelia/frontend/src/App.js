@@ -14,12 +14,12 @@ class App extends React.Component {
     componentDidMount() {
         const authors = [
             {
-                'first_name': 'Амелия',
+                'first_name': 'Амелия Константиновна',
                 'last_name': 'Сучкова',
                 'birthday_year': 2018
             },
             {
-                'first_name': 'Варвара',
+                'first_name': 'Варвара Константиновна',
                 'last_name': 'Сучкова',
                 'birthday_year': 2021
             },
