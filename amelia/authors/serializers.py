@@ -1,8 +1,13 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Author
+from .models import Author, Test_for_best
 
 
 class AuthorModelSerializer(ModelSerializer):
     class Meta:
         model = Author
+        fields = '__all__'
+
+class TestModelSerializer(ModelSerializer):
+    class Meta:
+        model = Test_for_best
         fields = '__all__'
