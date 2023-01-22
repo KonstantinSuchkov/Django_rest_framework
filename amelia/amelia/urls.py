@@ -18,13 +18,14 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
 from authors import views
-from authors.views import AuthorModelViewSet
+from authors.views import AuthorModelViewSet, TestModelViewset
 from todo_app.views import ProjectModelViewSet, TodoModelViewSet
 
 router = DefaultRouter()
 router.register('authors', AuthorModelViewSet)
 router.register('projects', ProjectModelViewSet, basename='Project')
 router.register('todo', TodoModelViewSet, basename='Todo')
+router.register('test', TestModelViewset, basename='Test')
 #router.register('my', AuthorModelViewSet, basename='api2')
 
 urlpatterns = [
