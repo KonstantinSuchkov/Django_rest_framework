@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
-                ('project_link', models.URLField(default=None, max_length=128)),
+                ('project_link', models.URLField(max_length=128)),
                 ('project_staff', models.ManyToManyField(to='authors.author')),
             ],
             options={
