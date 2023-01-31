@@ -13,14 +13,15 @@ class ProjectModelViewSet(ModelViewSet):
     serializer_class = ProjectModelSerializer
     renderer_classes = [JSONRenderer, BrowsableAPIRenderer]
     filterset_class = ProjectFilter
-    pagination.PageNumberPagination.page_size = 10
+    # pagination.PageNumberPagination.page_size = 10
 
 
 class TodoModelViewSet(ModelViewSet):
     renderer_classes = [JSONRenderer, BrowsableAPIRenderer]
     queryset = Todo_todo.objects.all()
     serializer_class = Todo_todoModelSerializer
-    pagination.PageNumberPagination.page_size = 20
+
+    # pagination.PageNumberPagination.page_size = 20
 
     def destroy(self, request, *args, **kwargs):  # переопределяем метод destroy
         instance = self.get_object()
