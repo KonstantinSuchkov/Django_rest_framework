@@ -5,7 +5,7 @@ from .models import Project, Todo_todo
 
 
 class ProjectModelSerializer(ModelSerializer):
-    # author = AuthorModelSerializer()
+    #project_staff = AuthorModelSerializer()
     class Meta:
         model = Project
         fields = '__all__'
