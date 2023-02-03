@@ -9,6 +9,8 @@ class Author(models.Model):
     last_name = models.CharField(max_length=32)
     username = models.CharField(max_length=32)
     email = models.EmailField()
+    is_staff = models.BooleanField(default=False)
+    is_superuser = models.BooleanField(default=False)
 
 
 class Test_for_best(models.Model):
