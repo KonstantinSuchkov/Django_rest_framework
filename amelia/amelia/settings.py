@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'authors',
     'todo_app',
     'drf_yasg',
-
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -160,3 +160,8 @@ CORS_ALLOW_METHODS = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
+
+GRAPHENE = {
+    "SCHEMA": "amelia.schema.schema"
+}
+
