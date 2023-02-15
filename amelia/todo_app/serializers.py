@@ -17,6 +17,6 @@ class Todo_todoModelSerializer(ModelSerializer):
         model = Todo_todo
         fields = '__all__'
 
-        extra_kwargs = {
-            'id': {'read_only': False},
-        }
+        # extra_kwargs = {
+        #     'id': {'read_only': False},
+        # }

@@ -17,7 +17,7 @@ class Project(models.Model):
 class Todo_todo(models.Model):
     project_name = models.ForeignKey(Project, on_delete=models.PROTECT)  # ссылка на проект
     text = models.TextField(blank=True)  # текст заметки
-    author = models.OneToOneField(Author, on_delete=models.CASCADE)  # автор заметки
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True)  # автор заметки
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     mark_done = models.BooleanField(default=False)
