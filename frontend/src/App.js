@@ -158,6 +158,7 @@ class App extends React.Component {
             .then(response => {
                     this.setState({'projects': response.data}
             )
+            console.log(response.data)
             }).catch(error => {
                 console.log(error)
                 this.setState({projects: []})

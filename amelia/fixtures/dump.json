@@ -1,0 +1,140 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$ZnVZIpiCCmykQY63Xg9tpY$4BBsJ9QDc3YJ+vDBSclSSlZnivOofWBjxPpmUl6E5Gs=",
+    "last_login": "2023-02-20T07:43:00.995Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-02-16T14:39:40.079Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4j6m3fbg2e72t34qysv32q06uy9u87uo",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnrf0xJnzNYu_aCA8iR4qRC3B0ipYD2zcx7iYTbWtPWeUlTEWehxOl3I8wPbjsod2y3Wea5rctEclfkQbsc58LPy-H-HVTs9VsbE1ERFhs04uCdYW_IEQ3ZayiglTcWVLyG4DQxIHFEB1YhWvA6O_H-ANJ-N0g:1pSiBP:P_VqdxqsKKJpzwv7wPpyx_C4flyY51u5C5ES_Y-ynng",
+    "expire_date": "2023-03-02T17:36:35.469Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "htjpqxq48ki3x6xvtlyh30980mnatj4k",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnrf0xJnzNYu_aCA8iR4qRC3B0ipYD2zcx7iYTbWtPWeUlTEWehxOl3I8wPbjsod2y3Wea5rctEclfkQbsc58LPy-H-HVTs9VsbE1ERFhs04uCdYW_IEQ3ZayiglTcWVLyG4DQxIHFEB1YhWvA6O_H-ANJ-N0g:1pU0pA:u3f282GSlK-3__Tc7aq5QSEnsE_XryYDtYbpM_OBdVE",
+    "expire_date": "2023-03-06T07:43:00.997Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "4ce67b34e7a5e0d49c7d0e2672c33ade7cac9af8",
+  "fields": {
+    "user": 1,
+    "created": "2023-02-16T14:40:07.528Z"
+  }
+},
+{
+  "model": "authors.author",
+  "pk": "7743e9bc-813a-4f18-9e71-c18a0223bbf8",
+  "fields": {
+    "first_name": "Varvara",
+    "last_name": "Suchkova",
+    "username": "Varvarka",
+    "email": "varya@ya.ru",
+    "is_staff": false,
+    "is_superuser": false
+  }
+},
+{
+  "model": "authors.author",
+  "pk": "eb78bb76-d6c3-431d-a49f-aaf12b314ff1",
+  "fields": {
+    "first_name": "Amelia",
+    "last_name": "Suchkova",
+    "username": "Amelka",
+    "email": "amely@mail.ru",
+    "is_staff": false,
+    "is_superuser": false
+  }
+},
+{
+  "model": "authors.author",
+  "pk": "ef7a596d-ede6-45f7-a904-2a4d64ef6505",
+  "fields": {
+    "first_name": "Konstantin",
+    "last_name": "Suchkov",
+    "username": "papa",
+    "email": "konstantinsuchkov@yandex.ru",
+    "is_staff": false,
+    "is_superuser": false
+  }
+},
+{
+  "model": "todo_app.project",
+  "pk": 2,
+  "fields": {
+    "name": "Сходить в садик",
+    "project_link": "https://gb.ru/lessons/295730",
+    "project_staff": [
+      "7743e9bc-813a-4f18-9e71-c18a0223bbf8"
+    ]
+  }
+},
+{
+  "model": "todo_app.project",
+  "pk": 3,
+  "fields": {
+    "name": "Убраться в комнате",
+    "project_link": "https://gb.ru/lessons/295722",
+    "project_staff": [
+      "eb78bb76-d6c3-431d-a49f-aaf12b314ff1",
+      "7743e9bc-813a-4f18-9e71-c18a0223bbf8",
+      "ef7a596d-ede6-45f7-a904-2a4d64ef6505"
+    ]
+  }
+},
+{
+  "model": "todo_app.todo_todo",
+  "pk": 2,
+  "fields": {
+    "project_name": 2,
+    "text": "test todo",
+    "author": "7743e9bc-813a-4f18-9e71-c18a0223bbf8",
+    "created_at": "2023-02-18T13:26:04.539Z",
+    "updated_at": "2023-02-20T07:29:43.514Z",
+    "mark_done": true
+  }
+},
+{
+  "model": "todo_app.todo_todo",
+  "pk": 3,
+  "fields": {
+    "project_name": 3,
+    "text": "Не забудь убраться в комнате",
+    "author": "ef7a596d-ede6-45f7-a904-2a4d64ef6505",
+    "created_at": "2023-02-18T13:28:58.320Z",
+    "updated_at": "2023-02-18T13:28:58.320Z",
+    "mark_done": false
+  }
+},
+{
+  "model": "todo_app.todo_todo",
+  "pk": 4,
+  "fields": {
+    "project_name": 2,
+    "text": "идите в сад!",
+    "author": "ef7a596d-ede6-45f7-a904-2a4d64ef6505",
+    "created_at": "2023-02-20T07:29:38.774Z",
+    "updated_at": "2023-02-20T07:29:38.774Z",
+    "mark_done": false
+  }
+}
+]
