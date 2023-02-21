@@ -8,7 +8,7 @@ const ProjectItem = ({project, deleteProject}) => {
             <td>{project.name}</td>
             <td>{project.project_link}</td>
             <td>{project.project_staff}</td>
-            <td><button onClick={()=> deleteProject(project.id)} type='button'>Delete</button></td>
+            <td><button onClick={()=> deleteProject(project.id)} type='button'>Delete Project</button></td>
         </tr>
     )
 }

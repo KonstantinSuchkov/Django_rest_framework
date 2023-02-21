@@ -23,10 +23,10 @@ class TodoModelViewSet(ModelViewSet):
 
     # pagination.PageNumberPagination.page_size = 20
 
-    # def destroy(self, request, *args, **kwargs):  # переопределяем метод destroy
-    #     instance = self.get_object()
-    #     if instance.mark_done is False:
-    #         instance.mark_done = True
-    #         instance.save()
-    #         return Response()
-    #     return Response()
+    def destroy(self, request, *args, **kwargs):  # переопределяем метод destroy
+        instance = self.get_object()
+        if instance.mark_done is False:
+            instance.mark_done = True
+            instance.save()
+            return Response()
+        return Response()
